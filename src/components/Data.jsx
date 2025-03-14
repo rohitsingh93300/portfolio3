@@ -1,6 +1,7 @@
 import { MdOutlineWeb } from "react-icons/md";
 import { FaLaptopCode, FaMobileAlt, FaCamera   } from "react-icons/fa";
-import testimonial1 from "../assets/avatar.webp"
+import testimonial1 from "../assets/girl.png"
+import testimonial2 from "../assets/boy.png"
 import { FaBriefcase, FaGraduationCap  } from "react-icons/fa6";
 import { FaRegStar } from "react-icons/fa";
 import Digital from "../assets/Digital.png"
@@ -51,14 +52,14 @@ export const service = [
 
 export const testimonials = [
     {
-        name:"Aman Sharma",
+        name:"Vanshika Sondhiya",
         para:"Rohit was hired to create a corporate identity. We were very pleased with the work",
         img: testimonial1
     },
     {
         name:"Aman Sharma",
         para:"Rohit was hired to create a corporate identity. We were very pleased with the work",
-        img: testimonial1
+        img: testimonial2
     },
    
 ]

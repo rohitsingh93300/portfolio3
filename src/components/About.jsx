@@ -34,12 +34,12 @@ const About = () => {
           }
         </div>
         <h1 className='text-2xl text-white font-bold mt-7'>Testimonials</h1>
-        <div className='flex flex-col md:flex-row gap-7 mt-14'>
+        <div className='flex flex-col md:flex-row gap-14 md:gap-7 mt-14'>
           {
             testimonials.map((item, index) => {
               return <div className='bg-gray-700 border border-white rounded-xl shadow py-4 px-6' key={index}>
                 <div className='flex gap-5'>
-                  <img src={item.img} alt="" className='h-20 w-20 bg-gray-800 p-2 rounded-2xl -mt-14 border-2 shadow-2xl border-gray-600' />
+                  <img src={item.img} alt="" className='h-20 w-20 bg-gray-800  rounded-2xl -mt-14 border-2 shadow-2xl border-gray-600' />
                   <h1 className='text-white font-bold text-xl'>{item.name}</h1>
                 </div>
                 <p className='text-gray-300 text-lg pr-6 mt-2'>{item.para}</p>
