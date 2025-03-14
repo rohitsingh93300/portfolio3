@@ -40,7 +40,10 @@ const About = () => {
               return <div className='bg-gray-700 border border-white rounded-xl shadow py-4 px-6' key={index}>
                 <div className='flex gap-5'>
                   <img src={item.img} alt="" className='h-20 w-20 bg-gray-800  rounded-2xl -mt-14 border-2 shadow-2xl border-gray-600' />
+                  <div>
                   <h1 className='text-white font-bold text-xl'>{item.name}</h1>
+                   <p>⭐⭐⭐⭐⭐</p>
+                  </div>
                 </div>
                 <p className='text-gray-300 text-lg pr-6 mt-2'>{item.para}</p>
               </div>
