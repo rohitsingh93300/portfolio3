@@ -7,10 +7,10 @@ const Portfolio = () => {
   return (
     <div className='md:rounded-xl bg-gray-600 md:m-7 flex-1 p-7'>
     <Navbar/>
-    <div>
+    <div className='mt-7'>
       <h1 className='text-white font-bold text-3xl mb-2'>Portfolio</h1>
       <hr className='border-2 text-yellow-500 w-10'/>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 mt-7">
+      <div className="grid md:grid-cols-3  gap-6 mt-7">
           {projects.map((project, index) => (
             <div
               key={index}

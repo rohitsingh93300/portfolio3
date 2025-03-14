@@ -1,15 +1,19 @@
 import React from 'react'
 import Navbar from './Navbar'
 import { service, testimonials } from './Data.jsx'
+import avatar from "../assets/avatar.webp"
 
 
 const About = () => {
   return (
     <div className='md:rounded-xl bg-gray-600 md:m-7 flex-1 p-7'>
       <Navbar />
-      <div>
-        <h1 className='text-white font-bold text-3xl mb-2'>About Me</h1>
+      <div className='mt-7'>
+        <h1 className='text-white font-bold text-3xl  mb-2'>About Me</h1>
         <hr className='border-3 text-yellow-500 w-12 rounded-4xl' />
+        <div className='mt-5 md:hidden'>
+          <img src={avatar} alt="" className='bg-gray-700 rounded-2xl'/>
+        </div>
         <p className='mt-4 text-gray-300 text-xl font-semibold'>Hi! I'm Rohit Singh, a passionate Full-Stack Developer with expertise in the MERN stack, WordPress, and SEO. With a strong foundation in modern web development and an eye for detail, I create elegant, user-friendly web solutions tailored to meet client needs.</p>
         <p className='mt-2 text-gray-300 text-xl font-semibold'>My journey into tech began from a non-IT background, and I've embraced every challenge to hone my skills in development, problem-solving, and teamwork. I’m always eager to learn and explore new technologies to deliver cutting-edge web experiences.When I’m not coding, I enjoy sharing my knowledge through my YouTube channel, where I teach JavaScript, MERN stack, and WordPress concepts. Let’s connect and build something amazing together!
         </p>
