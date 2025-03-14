@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import ResponsiveMenu from './ResponsiveMenu'
 import Logo from "../assets/Logo.png"
+import { HiMenuAlt1, HiMenuAlt3 } from 'react-icons/hi'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -23,7 +24,10 @@ const Navbar = () => {
       <div className='flex justify-between items-center text-xl md:hidden  px-5 '>
         {/* <h1 className='text-white font-bold'>Rohit Singh</h1> */}
         <img src={Logo} alt="" className='w-20'/>
-        <Menu className='text-yellow-500 ' onClick={toggle} />
+        {/* <Menu className='text-yellow-500 ' onClick={toggle} /> */}
+        {
+          open? <HiMenuAlt3 className='text-yellow-500 w-10 h-10' onClick={toggle}/> : <HiMenuAlt1 className='text-yellow-500 h-10 w-10' onClick={toggle}/>
+        }
 
       </div>
       <ResponsiveMenu open={open} setOpen={setOpen}/>
